@@ -121,11 +121,11 @@ class Sequence(object):
 
 class Parser(object):
 
-    def __init__(self, dictionaries=('en',), month_before_day=False,
+    def __init__(self, dictionaries=('en', 'ru'), month_before_day=False,
                  min_date=DEFAULT_MIN_DATE, max_date=DEFAULT_MAX_DATE, tokenizer_class=Tokenizer):
         '''
         Initializer.
-        - dictionaries: language codes of dictionaries to use (default: "en").
+        - dictionaries: language codes of dictionaries to use (default: "en, ru").
         - month_before_day: whether to prefer M/D/Y dates (American) over D/M/Y (default: False).
         - min_date: the minimal date to consider (default: 1950-01-01).
         - max_date: the maximal date to consider (default: 2049-12-31).
